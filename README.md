@@ -1,4 +1,7 @@
 # go
 
-# Note
-run code `go run .`
+run code
+```shell
+$ cd hello
+$ go run .
+```
