@@ -1,10 +1,17 @@
 # go
 
-Creating from scratch call this command. `example.com/greetings` is module name 
+`example.com/greetings` was imported in `hello/hello.go`
+
+because `example.com/greetings` already in local, tell go to use local module by call this command
 ```shell
-$ go mod init example.com/greetings
+$ go mod edit -replace example.com/greetings=../greetings
+$ go mod tidy
 ```
 
-![img.png](img.png)
+see hello/go.mod
 
-image source: `https://golang.org/doc/tutorial/create-module`
+run code
+```shell
+$ cd hello
+$ go run .
+```
