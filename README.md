@@ -1,7 +1,5 @@
 # go
 
-Note
-
 Creating from scratch call this command. `example.com/greetings` is module name 
 ```shell
 $ go mod init example.com/greetings
